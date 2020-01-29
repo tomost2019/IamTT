@@ -4,11 +4,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 html {
     background-color: #dfdfdf;
 }
+
+
+
 
 /* Fonts */
 
@@ -27,7 +31,7 @@ html {
 nav {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr 1fr 
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr; 
 }
 
 /* Logo */
@@ -48,6 +52,7 @@ nav {
     font-family: Bauhaus;
     font-size: 20px;
     color: #000;
+
 }
 
 
@@ -56,10 +61,12 @@ nav {
     display: flex;
     flex-direction: row;
     grid-column: 4;
+    justify-content: center;
 }
 
 .item-social {
     padding: 10px;
+
 }
 
 .item-social-text {
@@ -70,7 +77,7 @@ nav {
 
 .item-social:hover .item-social-text {
     visibility: visible;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s;
     opacity: 1;
 }
 
@@ -86,9 +93,12 @@ nav {
     font-size: 22px;
 }
 
+/* Hamburger icon */
+
 .hamburger {
     grid-column: 5;
     padding: 10px;
+    cursor: pointer;
 }
 
 .hamburger > img {
@@ -100,7 +110,7 @@ nav {
 .hamburger-text {
     background-color: #000;
     height: 13px;
-    width: 60px;
+    width: 54px;
     margin-left: 1px;
     transition: 0.5s;
     opacity: 0;
@@ -112,4 +122,45 @@ nav {
     visibility: visible;
     transition: 0.5s;
     opacity: 1;
+}
+
+/* Hamburger Menu & content */
+
+.hamburger-menu {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    background-color: #dfdfdf;
+    opacity: 1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    display: none;
+ 
+}
+
+.menu-content {
+    align-self: center;
+}
+
+.menu-content a:visited {
+    color: #000;
+}
+
+.menu-content a:hover {
+    color: #3937a1;
+}
+
+.menu-content-text {
+    padding: 10px;
+    font-family: Bauhaus;
+    text-align: center;
+    font-size: 80px;
+}
+
+.escape > img {
+    cursor: pointer;
 }
