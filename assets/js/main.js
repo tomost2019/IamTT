@@ -55,11 +55,3 @@ function createNavBar() {
 // Show navBar
 
 createNavBar()
-
-
-
-
-    
-
-
-

@@ -64,10 +64,14 @@ nav {
 
 .item-social-text {
     visibility: hidden;
+    transition: 0.5s;
+    opacity: 0;
 }
 
-.item-social-text-show {
+.item-social:hover .item-social-text {
     visibility: visible;
+    transition: 0.5s ease-in-out;
+    opacity: 1;
 }
 
 .underscore {
@@ -88,38 +92,24 @@ nav {
 }
 
 .hamburger > img {
-    width: 52px;
+    width: 55px;
     height: 30px;
+    
 }
 
 .hamburger-text {
     background-color: #000;
     height: 13px;
-    width: 51px;
+    width: 60px;
     margin-left: 1px;
+    transition: 0.5s;
+    opacity: 0;
     visibility: hidden;
-
+    
 }
 
-.hamburger-text-show {
+.hamburger:hover .hamburger-text {
     visibility: visible;
-
+    transition: 0.5s;
+    opacity: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
