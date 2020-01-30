@@ -66,7 +66,6 @@ nav {
 
 .item-social {
     padding: 10px;
-
 }
 
 .item-social-text {
@@ -99,6 +98,7 @@ nav {
     grid-column: 5;
     padding: 10px;
     cursor: pointer;
+
 }
 
 .hamburger > img {
@@ -163,4 +163,21 @@ nav {
 
 .escape > img {
     cursor: pointer;
+}
+
+/* For mobile devices, hiding social icons and adjusting font-sizes */
+
+@media (max-width: 414px) {
+    .item-social {
+        display: none;
+    }
+    .item-portfolio {
+        font-size: 40px;
+    }
+    .item-iamtt {
+        font-size: 15px;
+    }
+    .menu-content-text {
+        font-size: 50px;
+    }
 }
