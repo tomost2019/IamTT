@@ -1,37 +1,28 @@
 /* Global */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    color: #000;
 }
 
 html {
     background-color: #dfdfdf;
 }
 
-
-
-
 /* Fonts */
-
 @font-face {
     font-family: Bauhaus;
     src: url(/assets/fonts/Bauhaus_93/BAUHS93.ttf);
   }
 
 /* Navbar */
-
-
-.navbar-container {
-    width: 100%;
-}
-
 nav {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr; 
+    width: 100%;;
 }
 
 /* Logo */
@@ -42,19 +33,17 @@ nav {
 }
 
 .item-portfolio {
-    font-family: Bauhaus;
+    font-family: 'Bauhaus', Arial, Helvetica, sans-serif;
     font-size: 60px;
     color: #3937a1;
 }
 
 .item-iamtt {
     padding-left: 20px;
-    font-family: Bauhaus;
+    font-family: 'Bauhaus', Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: #000;
-
 }
-
 
 /* Social links */
 .social-icons {
@@ -69,13 +58,11 @@ nav {
 }
 
 .item-social-text {
-    visibility: hidden;
     transition: 0.5s;
     opacity: 0;
 }
 
 .item-social:hover .item-social-text {
-    visibility: visible;
     transition: 0.5s;
     opacity: 1;
 }
@@ -88,23 +75,20 @@ nav {
 }
 
 .open {
-    font-family: 'Franklin Gothic Heavy';
+    font-family: 'Franklin Gothic Heavy', Arial, Helvetica, sans-serif;
     font-size: 22px;
 }
 
 /* Hamburger icon */
-
 .hamburger {
     grid-column: 5;
     padding: 10px;
     cursor: pointer;
-
 }
 
 .hamburger > img {
     width: 55px;
     height: 30px;
-    
 }
 
 .hamburger-text {
@@ -114,24 +98,21 @@ nav {
     margin-left: 1px;
     transition: 0.5s;
     opacity: 0;
-    visibility: hidden;
-    
+    border: solid;
 }
 
 .hamburger:hover .hamburger-text {
-    visibility: visible;
     transition: 0.5s;
     opacity: 1;
+
 }
 
 /* Hamburger Menu & content */
-
 .hamburger-menu {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     background-color: #dfdfdf;
-    opacity: 1;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -139,7 +120,6 @@ nav {
     left: 0px;
     z-index: 1000;
     display: none;
- 
 }
 
 .menu-content {
@@ -156,7 +136,7 @@ nav {
 
 .menu-content-text {
     padding: 10px;
-    font-family: Bauhaus;
+    font-family: 'Bauhaus', Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 80px;
 }
@@ -165,9 +145,50 @@ nav {
     cursor: pointer;
 }
 
-/* For mobile devices, hiding social icons and adjusting font-sizes */
+/* Projects */
+.projects-container {
+    position: relative;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 12fr;
+    width: 100%;
+}
 
-@media (max-width: 414px) {
+.projects-bg-bottom {
+    background: rgb(83,46,202);
+    background: linear-gradient(-22deg, rgba(83,46,202,1) 0%, rgba(195,46,232,1) 100%, rgba(195,46,232,1) 100%);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.card {
+    position: relative;
+    height: 350px;
+    width: 300px;
+    background:rgba(255,255,255,0.5);
+    border-radius: 5px;
+    bottom: 60px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.card-space {
+    width: 50px;
+}
+
+/* For mobile devices, hiding social-icons and adjusting font-sizes */
+@media (max-width: 767px) {
     .item-social {
         display: none;
     }
@@ -179,5 +200,13 @@ nav {
     }
     .menu-content-text {
         font-size: 50px;
+    }
+}
+
+/* Ipad size */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .card {
+        height: 250px;
+        width: 200px;
     }
 }

@@ -82,9 +82,7 @@ const navbar = {
       }
     };
 
-
 function createNavBar() {
-
     // Display the logo
     navbar.showText();
 
@@ -94,9 +92,13 @@ function createNavBar() {
     // Hamburger Menu
     navbar.showMenu()
     navbar.closeMenu()
-    
 };
 
-// Show navBar
+const projects = {
+    
+}
 
+
+// Show Portfolio
 createNavBar()
+
