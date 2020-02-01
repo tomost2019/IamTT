@@ -95,10 +95,87 @@ function createNavBar() {
 };
 
 const projects = {
-    
-}
+    cards: {
+        card1: {
+            name: "Dj-Colors",
+            thumbnail: "assets/images/dj-color-thumbnail.png",
+            github: "https://github.com/tomost2019/dj-colors",
+            live: "https://tomost2019.github.io/dj-colors/"
+        },
+        card2: {
+            name: "MixMatch",
+            thumbnail: "assets/images/mixmatch-thumbnail.png",
+            github: "https://github.com/tomost2019/MixMatch",
+            live: "https://tomost2019.github.io/MixMatch/"
+        },
+        card3: {
+            name: "Portfolio IamTT",
+            thumbnail: "assets/images/iamtt-thumbnail.png",
+            github: "https://github.com/tomost2019/IamTT",
+            live: ""
+        },
+        card4: {
+            name: "MixMatch",
+            thumbnail: "",
+            github: "https://github.com/tomost2019/MixMatch",
+            live: "https://tomost2019.github.io/MixMatch/"
+        },
+        card5: {
+            name: "Portfolio IamTT",
+            thumbnail: "",
+            github: "https://github.com/tomost2019/IamTT",
+            live: ""
+        },
+        card6: {
+            name: "MixMatch",
+            thumbnail: "",
+            github: "https://github.com/tomost2019/MixMatch",
+            live: "https://tomost2019.github.io/MixMatch/"
+        },
 
+    },
+    showCards: () => {
+        let cards = Object.values(projects.cards);
+
+
+        for(let value of cards) {
+
+            $('.card-container').append(`
+            <div class="card">
+                <div class="card-thumbnail">
+                    <img src="${value.thumbnail}" alt="${value.name}">
+                </div>
+                <div class="card-link">
+                <a href="${value.live}" target="_rel"><img src="assets/images/live.png" alt"Live"></a>
+                <a href="${value.github}" target="_rel"><img src="assets/images/github.png" alt="github"></a>
+                </div>
+            </div>
+            `)
+        };
+
+        $('.card-link').hide();
+
+        $('.card').hover(function () {
+            $(this).find('.card-thumbnail').hide();
+            $(this).find('.card-link').show();
+        }, function() {
+            $(this).find('.card-link').hide();
+            $(this).find('.card-thumbnail').show();
+        });
+
+        if(navigator.appVersion.indexOf("Edge") != -1){
+            $('.card-link').css('justify-content', 'space-around')
+          };
+    }
+}
 
 // Show Portfolio
 createNavBar()
+projects.showCards()
 
+
+
+
+/*
+-n+3 
+*/
