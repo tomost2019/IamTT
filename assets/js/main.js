@@ -114,29 +114,9 @@ const projects = {
             github: "https://github.com/tomost2019/IamTT",
             live: ""
         },
-        card4: {
-            name: "MixMatch",
-            thumbnail: "",
-            github: "https://github.com/tomost2019/MixMatch",
-            live: "https://tomost2019.github.io/MixMatch/"
-        },
-        card5: {
-            name: "Portfolio IamTT",
-            thumbnail: "",
-            github: "https://github.com/tomost2019/IamTT",
-            live: ""
-        },
-        card6: {
-            name: "MixMatch",
-            thumbnail: "",
-            github: "https://github.com/tomost2019/MixMatch",
-            live: "https://tomost2019.github.io/MixMatch/"
-        },
-
     },
     showCards: () => {
         let cards = Object.values(projects.cards);
-
 
         for(let value of cards) {
 
@@ -153,16 +133,6 @@ const projects = {
             `)
         };
 
-        $('.card-link').hide();
-
-        $('.card').hover(function () {
-            $(this).find('.card-thumbnail').hide();
-            $(this).find('.card-link').show();
-        }, function() {
-            $(this).find('.card-link').hide();
-            $(this).find('.card-thumbnail').show();
-        });
-
         if(navigator.appVersion.indexOf("Edge") != -1){
             $('.card-link').css('justify-content', 'space-around')
           };
@@ -172,10 +142,3 @@ const projects = {
 // Show Portfolio
 createNavBar()
 projects.showCards()
-
-
-
-
-/*
--n+3 
-*/
