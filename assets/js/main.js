@@ -42,17 +42,13 @@ const navbar = {
       hamburgerMenu: {
         link1: {
             text: "Projects",
-            href: ""
+            href: "#projects"
         },
         link2: {
             text: "About",
             href: ""
         },
         link3: {
-            text: "Skills",
-            href: ""
-        },
-        link4: {
             text: "Contact",
             href: ""
         },
@@ -65,7 +61,7 @@ const navbar = {
         for (let value of hamburgerMenu) {
             $('.menu-content').append(`
             <div class="menu-content-text">
-                <a href="${value.href}">${value.text}</a>
+                <a class="menu" href="${value.href}">${value.text}</a>
             </div>
         `)
         }
@@ -77,6 +73,9 @@ const navbar = {
             }
           })
           $('.escape').on('click', function() {
+            $('.hamburger-menu').css('display', 'none')
+          })
+          $('.menu').on('click', function() {
             $('.hamburger-menu').css('display', 'none')
           })
       }
@@ -114,13 +113,14 @@ const projects = {
             github: "https://github.com/tomost2019/IamTT",
             live: ""
         },
+
     },
     showCards: () => {
         let cards = Object.values(projects.cards);
 
         for(let value of cards) {
 
-            $('.card-container').append(`
+            $('.project-container').append(`
             <div class="card">
                 <div class="card-thumbnail">
                     <img src="${value.thumbnail}" alt="${value.name}">

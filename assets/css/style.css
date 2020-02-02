@@ -25,6 +25,10 @@ nav {
     width: 100%;;
 }
 
+.esc-smaller {
+    display: none;
+}
+
 /* Logo */
 .logo {
     display: flex;
@@ -144,10 +148,8 @@ nav {
     cursor: pointer;
 }
 
-/* Projects */
-.projects-container {
-    position: relative;
-    margin: 0 auto;
+/* ------ All container ------ */
+.all-container {
     display: grid;
     grid-template-rows: 80px auto;
     grid-template-columns: auto;
@@ -161,16 +163,23 @@ nav {
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-.projects-all {
+.all-content {
     background: rgb(83,46,202);
     background: linear-gradient(-22deg, rgba(83,46,202,1) 0%, rgba(195,46,232,1) 100%, rgba(195,46,232,1) 100%);
 }
 
-.card-container {
+.divider {
+    display: grid;
+    grid-template-rows: 50px;
+}
+
+/* ------ Section Project cards ------ */
+
+.project-container {
     display: grid;
     grid-template-columns: repeat(3, 300px);
     grid-column-gap: 50px;
-    grid-row-gap: 30px;
+    grid-row-gap: 50px;
     justify-content: center;    
 }
 
@@ -240,6 +249,32 @@ nav {
     border-radius: 5px;
 }
 
+/* About */
+
+.skills-container {
+    display: grid;
+    justify-content: center;
+}
+
+.skills {
+    position: relative;
+    display: grid;
+    grid-template-rows: 4fr 4fr;
+    justify-content: center;
+    border-radius: 10px;
+    width: 1000px;
+    height: 150px;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.django {
+    margin-left: 10px;
+}
+
 /* For mobile devices, hiding social-icons and adjusting font-sizes */
 @media (max-width: 767px) {
     .item-social {
@@ -254,39 +289,67 @@ nav {
     .menu-content-text {
         font-size: 50px;
     }
-    .projects-container {
+    .all-container {
         grid-template-rows: 15px;
     }
-    .card-container {
+    .project-container {
         grid-template-columns: repeat(1, 300px);
         margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
     .card {
         bottom: 0px;
     }
+    .skills {
+        width: 300px;
+        height: 300px;
+    }
+    .icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .esc-smaller {
+        display: grid;
+    }
+    .esc-bigger {
+        display: none;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 320px) {
-    .card-container {
+    .project-container {
         grid-template-columns: repeat(1, 300px);
     }
-    .projects-container {
+    .all-container{
         grid-template-rows: 15px auto;
     }
     .card {
         width: 300px;
         height: 200px;
     }
+    .skills {
+        width: 300px;
+        height: 300px;
+    }
+    .icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .esc-smaller {
+        display: grid;
+    }
+    .esc-bigger {
+        display: none;
+    }
 }
 
 /* Tablet size */
 @media (min-width: 768px) and (max-width: 1023px) {
 
-    .projects-container {
+    .all-container {
         grid-template-rows: 70px auto;
     }
-    .card-container {
+    .project-container {
         grid-template-columns: repeat(3, 235px);
         grid-column-gap: 20px;
     }
@@ -294,15 +357,26 @@ nav {
         width: 235px;
         height: 200px;
     }
+    .skills {
+        width: 745px;
+        height: 230px;
+    }
+    .icons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1140px) {
 
-    .projects-container {
+    .all-container {
         grid-template-rows: 70px auto;
     }
-    .card-container {
+    .project-container {
         grid-template-columns: repeat(3, 300px);
         grid-column-gap: 20px;
+    }
+    .skills {
+        width: 940px;
     }
 }
