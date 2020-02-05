@@ -57,10 +57,6 @@ nav {
     justify-content: center;
 }
 
-.item-social {
-    padding: 10px;
-}
-
 .item-social-text {
     transition: 0.5s;
     opacity: 0;
@@ -75,12 +71,13 @@ nav {
     background-color: #000;
     width: 55px;
     height: 5px;
-    margin-top: 10px;
+    margin-left: 8px;
 }
 
 .open {
     font-family: 'Franklin Gothic Heavy', Arial, Helvetica, sans-serif;
     font-size: 22px;
+    margin-left: 8px;
 }
 
 /* Hamburger icon */
@@ -149,9 +146,9 @@ nav {
 }
 
 /* ------ All container ------ */
-.all-container {
+.projectskill-container {
     display: grid;
-    grid-template-rows: 80px auto;
+    grid-template-rows: 100px auto;
     grid-template-columns: auto;
     width: 100%;
     box-shadow:
@@ -238,8 +235,15 @@ nav {
     opacity: 1;
 }
 
+
+
 .card-link > a:hover {
     transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.card-link > a{
+    transform: scale(1);
     transition: transform 0.5s;
 }
 
@@ -262,18 +266,46 @@ nav {
     grid-template-rows: 4fr 4fr;
     justify-content: center;
     border-radius: 10px;
+    margin-bottom: 100px;
     width: 1000px;
     height: 150px;
 }
 
-.icons {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
+.skills-text {
+    font-size: 50px;
+    font-family: 'Bauhaus', Arial, Helvetica, sans-serif;
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.django {
-    margin-left: 10px;
+.icons {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }
+
+.icons-in {
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+.icons-out {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.icons-zoom-in {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.icons-zoom-out {
+    transform: scale(1);
+    transition: 0.5s;
+}
+
 
 /* For mobile devices, hiding social-icons and adjusting font-sizes */
 @media (max-width: 767px) {
@@ -289,7 +321,7 @@ nav {
     .menu-content-text {
         font-size: 50px;
     }
-    .all-container {
+    .projectskill-container {
         grid-template-rows: 15px;
     }
     .project-container {
@@ -302,7 +334,7 @@ nav {
     }
     .skills {
         width: 300px;
-        height: 300px;
+        height: 320px;
     }
     .icons {
         display: grid;
@@ -320,7 +352,7 @@ nav {
     .project-container {
         grid-template-columns: repeat(1, 300px);
     }
-    .all-container{
+    .projectskill-container{
         grid-template-rows: 15px auto;
     }
     .card {
@@ -329,7 +361,7 @@ nav {
     }
     .skills {
         width: 300px;
-        height: 300px;
+        height: 320px;
     }
     .icons {
         display: grid;
@@ -346,7 +378,7 @@ nav {
 /* Tablet size */
 @media (min-width: 768px) and (max-width: 1023px) {
 
-    .all-container {
+    .projectskill-container {
         grid-template-rows: 70px auto;
     }
     .project-container {
@@ -359,17 +391,18 @@ nav {
     }
     .skills {
         width: 745px;
-        height: 230px;
+        height: 250px;
     }
     .icons {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
+        grid-row-gap: 20px;
     }
 }
 
 @media (min-width: 1024px) and (max-width: 1140px) {
 
-    .all-container {
+    .projectskill-container {
         grid-template-rows: 70px auto;
     }
     .project-container {
