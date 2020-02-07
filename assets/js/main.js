@@ -23,11 +23,11 @@ const navbar = {
       hamburgerMenu: {
         link1: {
             text: "Projects",
-            href: "#projects"
+            href: "#projectskill"
         },
         link2: {
             text: "About",
-            href: ""
+            href: "#about"
         },
         link3: {
             text: "Contact",
@@ -119,7 +119,7 @@ const projects = {
             thumbnail: "assets/images/iamtt-thumbnail.png",
             github: "https://github.com/tomost2019/IamTT",
             live: ""
-        }
+        },
     },
     skills: {
         skill1: {
@@ -199,6 +199,7 @@ const projects = {
         }
     },
     cardShowSkills: () => {
+
         $('.card').hover(function () {
 
             // Get the data from the data-tag.
@@ -214,11 +215,11 @@ const projects = {
                 allDataSkills.push("#" + value);
             }
 
-            // Get the data form the object
+            // Get the data from the object
     
             skills = Object.values(projects.skills)
 
-            // Convert it into an array
+            // All skills array. 
     
             allSkills = []
     
@@ -232,30 +233,31 @@ const projects = {
                 return !allDataSkills.includes(item); 
               })
 
-            // Add effects.
+            // Add effects from allSkills array. 
             
             for (let value of allSkills) {
-                $(value).removeClass('icons-out')
-                $(value).addClass('icons-in')
+                $(value).removeClass('icons-out');
+                $(value).addClass('icons-in');
             }
     
             for(let value of allDataSkills) {
-                $(value).removeClass('icons-zoom-out')
-                $(value).addClass('icons-zoom-in')
+                $(value).removeClass('icons-zoom-out');
+                $(value).addClass('icons-zoom-in');
             }
     
-            // Remove effects reset data.
+            // Remove effects, reset data.
 
             }, function () {
-    
+
+
                 for (let value of allSkills) {
-                    $(value).removeClass('icons-in')
-                    $(value).addClass('icons-out')
+                    $(value).removeClass('icons-in');
+                    $(value).addClass('icons-out');
                 }
     
                 for(let value of allDataSkills) {
-                    $(value).removeClass('icons-zoom-in')
-                    $(value).addClass('icons-zoom-out')
+                    $(value).removeClass('icons-zoom-in');
+                    $(value).addClass('icons-zoom-out');
                 }
               
                 allSkills.length = 0;
