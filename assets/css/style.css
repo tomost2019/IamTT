@@ -447,7 +447,7 @@ nav {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 90px 160px 160px ;
-    grid-template-rows: 90px 150px 190px ;
+    grid-template-rows: 85px 140px 205px;
     width: 450px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -716,7 +716,7 @@ textarea {
         display: -ms-grid;
         display: grid;
         -ms-grid-rows: 50px 160px 160px ;
-        grid-template-rows: 70px 160px 160px ;
+        grid-template-rows: 110px 130px 200px;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
@@ -850,7 +850,7 @@ textarea {
         display: -ms-grid;
         display: grid;
         -ms-grid-rows: 90px 140px 160px ;
-        grid-template-rows: 90px 140px 160px ;
+        grid-template-rows: 70px 130px 200px;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
@@ -935,7 +935,7 @@ textarea {
         display: -ms-grid;
         display: grid;
         -ms-grid-rows: 90px 160px 160px ;
-        grid-template-rows: 90px 160px 160px ;
+        grid-template-rows: 70px 130px 200px;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
