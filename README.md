@@ -1,9 +1,9 @@
-# iamtt - Personal Portfolio
+# IamTT - Personal Portfolio
 Hi! Welcome to my portfolio. This is a website where I can display all my projects
 and tell a bit about myself and how to contact me. 
 
-### User Story
-I need a website to show projects, about me and contact information for potential employers and clients. 
+## User Story
+I needed a website to show projects, about me and contact information for potential employers and clients. 
 
 ## Technologies Used
 * HTML - The foundation.
@@ -34,4 +34,4 @@ Icons at top and bottom to connect with me.
 ## Credits
 
 [Icons](https://www.icons8.com)<br>
-[About me Vector](https://www.freepik.com/free-photos-vectors/people")<br>
+[About me Vector](https://www.freepik.com/free-photos-vectors/people)<br>
