@@ -23,7 +23,7 @@ On the top for easy access. When hovering over the cards the skills that were us
 Some short information about myself as a developer. 
 
 #### Contact
-Contact form that sends to my email through EmailJS Api. To connect 
+Contact form that sends the data from the form to my email through EmailJS Api.
 
 ### Chat
 Chat bubble on the right corner bottom to send direct messages. 
