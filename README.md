@@ -1,3 +1,5 @@
+![Portfolio](https://tomost2019.github.io/iamtt/assets/images/portfolio.png)
+
 # IamTT - Personal Portfolio
 Hi! Welcome to my portfolio. This is a website where I can display all my projects
 and tell a bit about myself and how to contact me. 
@@ -25,10 +27,10 @@ Some short information about myself as a developer.
 #### Contact
 Contact form that sends the data from the form to my email through EmailJS Api.
 
-### Chat
+#### Chat
 Chat bubble on the right corner bottom to send direct messages. 
 
-### Social
+#### Social
 Icons at top and bottom to connect with me. 
 
 ## Credits
