@@ -119,7 +119,7 @@ const projects = {
             skills: "html, css, js, jquery",
             thumbnail: "assets/images/iamtt-thumbnail.png",
             github: "https://github.com/tomost2019/IamTT",
-            live: ""
+            live: "https://iamtt.tech"
         },
     },
     skills: {
