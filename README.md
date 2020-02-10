@@ -1,4 +1,4 @@
-![Portfolio](https://tomost2019.github.io/iamtt/assets/images/portfolio.png)
+![Portfolio](https://tomost2019.github.io/IamTT/assets/images/portfolio.png)
 
 # IamTT - Personal Portfolio
 Hi! Welcome to my portfolio. This is a website where I can display all my projects
