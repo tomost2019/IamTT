@@ -9,40 +9,42 @@
 </head>
 <body>
 
-<!-- Navbar-->
+<!-- Navbar -->
 <nav>
-    <div class="logo">
-        <a href="">
-        <div class="item-portfolio">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="">
+            <span class="item-portfolio"></span>
+            <span class="item-iamtt"></span>
+            </a>
         </div>
-        <div class="item-iamtt">
-        </a>
+        <div class="social-hamburger">
+            <div class="social-icons"></div>
+            <div class="hamburger">
+                <img src="/assets/images/menu.png" alt="Hamburger">
+                <div class="hamburger-text"></div>
+            </div>
         </div>
     </div>
-    <div class="social-icons"></div>
-        <div class="hamburger">
-            <img src="/assets/images/menu.png" alt="Hamburger">
-            <div class="hamburger-text"></div>
+</nav> 
+
+<!-- Hamburger Menu -->
+<div class="hamburger-menu">
+    <div class="escape">
+        <img class="esc-bigger" src="https://img.icons8.com/ios-filled/100/000000/esc-mac.png" alt="Escape Key">
+        <img class="esc-smaller" src="https://img.icons8.com/ios-filled/50/000000/esc-mac.png" alt="Escape Key">
     </div>
-    <div class="hamburger-menu">
-        <div>
-        <div class="escape">
-            <img class="esc-bigger" src="https://img.icons8.com/ios-filled/100/000000/esc-mac.png" alt="Escape Key">
-            <img class="esc-smaller" src="https://img.icons8.com/ios-filled/50/000000/esc-mac.png" alt="Escape Key">
-        </div>
-        </div>
-        <div class="menu-content"></div>
-        <div></div>
-    </div>
-</nav>
+    <div class="menu-content"></div>
+</div>
+
 
 <!-- Projects and skills-->
 <div id="projectskill">
     <div class="space-top"></div>
     <div class="projectskill-content">
-        <!-- Section project cards -->
+        <!-- projects cards -->
         <div class="project-container"></div>
-        <!-- Section skills-->
+        <!-- skills-->
         <div class="skills-container">
             <div class="skills">
                 <div class="skills-text">
@@ -64,13 +66,12 @@
                 full stack developer. On my portfolio, you can see my current 
                 projects and skills.
             </p>
-            
             <p>
-                My strength lies in the front-end where I truly enjoy to build easy to use, user-friendly websites and applications.
+                Focusing mostly on the front-end, I truly enjoy to build easy to use, user-friendly websites and applications.
                 I have good fundamental skills in HTML, CSS and JS for the front-end. As for the backend my current skills are in Python and Django. 
             </p>
             <p>
-                Staying up to date with the industry is a must as a developer and apart from that I actively seek out new technologies and advancements.
+                Staying up to date with the industry is a must as a developer and apart from that I actively seek out new technologies and trends.
             </p>
             </div>
         <div class="about-img">
@@ -87,26 +88,29 @@
         <div class="contact-container">
             <div class="contact-text">CONTACT</div>
             <div class="contact">
-                <form>
+                <form id="contact" method="post">
                     <div class="contact-form-top">
-                        <input type="text" placeholder="Full Name" id="fullname" name="fullname">
-                        <input type="text" placeholder="Email Adress" id="email" name="email" required>
+                        <input type="text" class="name-email" placeholder="Full Name" name="fullname">
+                        <input type="email" class="name-email" placeholder="Email Adress" name="email" required>
                     </div>
                     <div class="message">
-                        <textarea placeholder="Your message" id="message" name="message" required></textarea>
+                        <textarea placeholder="Your message" name="message" required></textarea>
                     </div>
                     <div class="submit">
-                        <input type="submit" value="SEND">
+                        <button id="submit">SEND</button>
                     </div>
                 </form>
-                </div>
-            </div>
+             </div>
         </div>
     </div>
 </div>
 
-
+<!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!-- Custom JS -->
 <script src="assets/js/main.js"></script>
+<!-- EmailJS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+
 </body>
 </html>
