@@ -105,14 +105,14 @@ const projects = {
             skills: "html, css, js, bootstrap, jquery",
             thumbnail: "assets/images/dj-color-thumbnail.png",
             github: "https://github.com/tomost2019/dj-colors",
-            live: "https://tomost2019.github.io/dj-colors/"
+            live: "https://dj-colors.iamtt.tech"
         },
         card2: {
             name: "MixMatch",
             skills: "html, css, js, bootstrap, jquery",
             thumbnail: "assets/images/mixmatch-thumbnail.png",
             github: "https://github.com/tomost2019/MixMatch",
-            live: "https://tomost2019.github.io/MixMatch/"
+            live: "https://mixmatch.iamtt.tech"
         },
         card3: {
             name: "Portfolio IamTT",
