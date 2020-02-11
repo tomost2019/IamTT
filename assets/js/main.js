@@ -36,7 +36,7 @@ const navbar = {
     },
       showLinks: () => {
         let social = Object.values(navbar.socialLinks);
-        // Iterate through social and append data.
+        // Iterate through social and append social icons.
         for (let value of social) {
           $(".social-icons").append(`
             <div class="item-social">
@@ -60,7 +60,7 @@ const navbar = {
         $('.hamburger-menu').css('display', 'grid');
         })
         let hamburgerMenu = Object.values(navbar.hamburgerMenu);
-        // Iterate through hamburger menu links data and append it. 
+        // Iterate through hamburgerMenu and append the links.
         for (let value of hamburgerMenu) {
             $('.menu-content').append(`
             <div class="menu-content-text">
@@ -163,7 +163,7 @@ const projects = {
     showProjectCards: () => {
         let cards = Object.values(projects.cards);
 
-        // Iterate through cards and append data.
+        // Iterate through cards and append project cards.
         for(let value of cards) {
 
             $('.project-container').append(`
@@ -180,7 +180,6 @@ const projects = {
         };
 
         // Checks if the web browser is edge and add proper css.
-
         if(navigator.appVersion.indexOf("Edge") != -1){
             $('.card-link').css('justify-content', 'space-around')
           };
@@ -189,7 +188,7 @@ const projects = {
     showSkills: () => {
         let skills = Object.values(projects.skills);
 
-        // Iterate through skills and append data.
+        // Iterate through skills and append skill icons.
         for (let value of skills) {
             $('.icons').append(`
 
@@ -200,9 +199,9 @@ const projects = {
     },
     /* This function is to hightlight the skills 
     when hovering over the projects cards. 
-    This shows which skills were use to make the project. 
+    This shows which skills were used to make the project. 
     After hover they icons return to their normal state */
-    projectsShowSkills: () => {
+    projectShowSkills: () => {
 
         $('.card').hover(function ()  {
 
@@ -221,11 +220,9 @@ const projects = {
             };
 
             // Get the data from the skills object.
-    
             skills = Object.values(projects.skills);
 
             // All skills array. 
-    
             allSkills = [];
     
             /* Add an id tag so that allDataSkills and allSkills 
@@ -241,7 +238,6 @@ const projects = {
               });
 
             // Add effects from allSkills array.
-            
             for (let value of allSkills) {
                 $(value).removeClass('icons-out');
                 $(value).addClass('icons-in');
@@ -253,7 +249,6 @@ const projects = {
             };
     
             // Remove effects, reset data.
-
             }, function () {
 
                 for (let value of allSkills) {
@@ -283,14 +278,15 @@ function showProjects() {
     projects.showSkills();
 
     // Display which skills were used for creating a project.
-    projects.projectsShowSkills();
+    projects.projectShowSkills();
 };
 
 // Enables the contact form to send email through EmailJS API. 
 function contactForm() {
 
     /* When the mail has been sent from the contact form 
-    the function changes the css heights for the contact section. */
+    the function changes the css heights for the contact section
+    to proper display the "MESSAGE SENT"  text.*/
     function sentMail() {
         let width = $(window).width();
         
@@ -316,7 +312,7 @@ function contactForm() {
         }
     }
 
-    // Send the information from the form to my email through emailJS.
+    // Send the information from the form to my email through emailJS Api.
     $('form#contact').submit(function(event){
         event.preventDefault();
         
@@ -343,7 +339,7 @@ function contactForm() {
 };
 
 
-// Drift (insta message) Icon at the bottom right. 
+// Drift (insta chat) Icon at the bottom right. 
 function driftChat() {
     "use strict";
     !function() {
