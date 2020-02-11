@@ -125,39 +125,39 @@ const projects = {
     skills: {
         skill1: {
             name: "html",
-            imgSrc: "../assets/images/html-5.png"
+            imgSrc: "../assets/images/skills/html-5.png"
         },
         skill2: {
             name: "css",
-            imgSrc: "https://img.icons8.com/color/96/000000/css3.png"
+            imgSrc: "../assets/images/skills/css3.png"
         },
         skill3: {
             name: "js",
-            imgSrc: "https://img.icons8.com/color/96/000000/javascript.png"
+            imgSrc: "../assets/images/skills/js.png"
         },
         skill4: {
             name: "python",
-            imgSrc: "https://img.icons8.com/color/96/000000/python.png"
+            imgSrc: "../assets/images/skills/python.png"
         },
         skill5: { 
             name: "bootstrap",
-            imgSrc: "https://img.icons8.com/color/96/000000/bootstrap.png"
+            imgSrc: "../assets/images/skills/bootstrap.png"
         },
         skill6: {
             name: "jquery",
-            imgSrc: "https://img.icons8.com/ios-filled/96/000000/jquery.png"
+            imgSrc: "../assets/images/skills/jquery.png"
         },
         skill7: {
             name: "react",
-            imgSrc: "https://img.icons8.com/color/96/000000/react-native.png"
+            imgSrc: "../assets/images/skills/react.png"
         },
         skill8: {
             name: "mongodb",
-            imgSrc: "https://img.icons8.com/color/96/000000/mongodb.png"
+            imgSrc: "../assets/images/skills/mongodb.png"
         },
         skill9: {
             name: "django",
-            imgSrc: "https://img.icons8.com/ios-filled/100/000000/django.png"
+            imgSrc: "../assets/images/skills/django.png"
         },
     },
     showProjectCards: () => {
