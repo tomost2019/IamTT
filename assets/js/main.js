@@ -125,7 +125,7 @@ const projects = {
     skills: {
         skill1: {
             name: "html",
-            imgSrc: "https://img.icons8.com/color/96/000000/html-5.png"
+            imgSrc: "../assets/images/html-5.png"
         },
         skill2: {
             name: "css",
