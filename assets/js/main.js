@@ -172,8 +172,8 @@ const projects = {
                     <img src="${value.thumbnail}" alt="${value.name}">
                 </div>
                 <div class="card-link">
-                <a href="${value.live}" target="_rel"><img src="https://img.icons8.com/clouds/120/000000/domain.png" alt"Live"></a>
-                <a href="${value.github}" target="_rel"><img src="https://img.icons8.com/clouds/120/000000/github.png" alt="github"></a>
+                <a href="${value.live}" target="_rel"><img src="../assets/images/live.png" alt"Live"></a>
+                <a href="${value.github}" target="_rel"><img src="../assets/images/github-live.png" alt="github"></a>
                 </div>
             </div>
             `)
