@@ -7,12 +7,12 @@ const navbar = {
     socialLinks: {
         link1: {
             name: "Github",
-            imgSrc: "https://img.icons8.com/material-sharp/70/000000/github.png",
+            imgSrc: "../assets/images/github.png",
             link: "https://github.com/tomost2019/"
         },
         link2: {
             name: "Linkedin",
-            imgSrc: "https://img.icons8.com/color/70/000000/linkedin.png",
+            imgSrc: "../assets/images/linkedin.png",
             link: "https://www.linkedin.com/in/tom-amnuay/"
         },
       },
