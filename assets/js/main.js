@@ -148,16 +148,16 @@ const projects = {
             imgSrc: "../assets/images/skills/jquery.png"
         },
         skill7: {
-            name: "react",
-            imgSrc: "../assets/images/skills/react.png"
-        },
-        skill8: {
             name: "mongodb",
             imgSrc: "../assets/images/skills/mongodb.png"
         },
-        skill9: {
+        skill8: {
             name: "django",
             imgSrc: "../assets/images/skills/django.png"
+        },
+        skill9: {
+            name: "flask",
+            imgSrc: "../assets/images/skills/flask.png"
         },
     },
     showProjectCards: () => {
