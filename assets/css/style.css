@@ -673,7 +673,7 @@ textarea {
     top: 300px;
 }
 
-/* For mobile devices, hiding social-icons and adjusting font-sizes */
+/* For mobile devices */
 @media (max-width: 767px) {
     nav {
         -ms-grid-columns: 330px;

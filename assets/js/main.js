@@ -165,9 +165,10 @@ const projects = {
 
         // Iterate through cards and append project cards.
         for(let value of cards) {
-
+            /* Add the attribute data-skills with the skills from each projects.
+            It is used to compare skills in the projectShowSkills function. */
             $('.project-container').append(`
-            <div class="card" data-skill="${value.skills}"> 
+            <div class="card" data-skills="${value.skills}"> 
                 <div class="card-thumbnail">
                     <img src="${value.thumbnail}" alt="${value.name}">
                 </div>
@@ -200,13 +201,13 @@ const projects = {
     /* This function is to hightlight the skills 
     when hovering over the projects cards. 
     This shows which skills were used to make the project. 
-    After hover they icons return to their normal state */
+    After hover the icons return to their normal state */
     projectShowSkills: () => {
 
         $('.card').hover(function ()  {
 
             // Get the data from the data-tag.
-            let dataSkills = $(this).data('skill');
+            let dataSkills = $(this).data('skills');
 
             // Convert it into an array
             let arrDataSkills = dataSkills.split(", ");
@@ -231,7 +232,7 @@ const projects = {
                 allSkills.push("#" + value.name);
             };
     
-            /* filter allSkills array from the content of allDataSkills array 
+            /* Filter allSkills array from the content of allDataSkills array 
             and re-decklare the original array of allSkills.*/
             allSkills = allSkills.filter(function(item) {
                 return !allDataSkills.includes(item); 
@@ -286,7 +287,7 @@ function contactForm() {
 
     /* When the mail has been sent from the contact form 
     the function changes the css heights for the contact section
-    to proper display the "MESSAGE SENT"  text.*/
+    to proper display the "MESSAGE SENT" text.*/
     function sentMail() {
         let width = $(window).width();
         
