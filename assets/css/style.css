@@ -694,8 +694,8 @@ textarea {
         font-size: 50px;
     }
     #projectskill {
-        -ms-grid-rows: 15px;
-        grid-template-rows: 15px;
+        -ms-grid-rows: 0px;
+        grid-template-rows: 0px;
     }
     .project-container {
         -ms-grid-columns: (300px)[1];
@@ -797,13 +797,16 @@ textarea {
         grid-template-columns: 320px;
         width: 320px;
     }
+    .item-portfolio {
+        margin-left: 10px;
+    }
     .project-container {
         -ms-grid-columns: (300px)[1];
         grid-template-columns: repeat(1, 300px);
     }
-    #projectskill{
-        -ms-grid-rows: 15px auto;
-        grid-template-rows: 15px auto;
+    #projectskill {
+        -ms-grid-rows: 0px;
+        grid-template-rows: 0px;
     }
     .card {
         width: 300px;
