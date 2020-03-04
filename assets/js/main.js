@@ -57,8 +57,7 @@ const navbar = {
       },
       showHamburgerMenu: () => {
         $('.hamburger').on('click', function () {
-        $('.hamburger-menu').css('display', 'grid');
-        $('html').css('overflow' , 'hidden');
+        $('.hamburger-menu').slideDown(500).css('display', 'grid');
         })
         let hamburgerMenu = Object.values(navbar.hamburgerMenu);
         // Iterate through hamburgerMenu and append the links.
@@ -73,17 +72,14 @@ const navbar = {
       closeHamburgerMenu: () => {
           $(document).on('keydown', function(e) {
             if (e.keyCode == 27) /* ESC Key */ {
-                $('.hamburger-menu').css('display', 'none');
-                $('html').css('overflow' , 'visible');
+                $('.hamburger-menu').slideUp(500);
             }
           })
           $('.escape').on('click', function() {
-            $('.hamburger-menu').css('display', 'none');
-            $('html').css('overflow' , 'visible');
+            $('.hamburger-menu').slideUp(500);
           })
           $('.menu').on('click', function() {
             $('.hamburger-menu').css('display', 'none');
-            $('html').css('overflow' , 'visible');
           })
       }
     };
