@@ -109,22 +109,26 @@ const projects = {
             skills: "html, css, js, bootstrap, jquery",
             thumbnail: "assets/images/dj-color-thumbnail.png",
             github: "https://github.com/tomost2019/dj-colors",
-            live: "https://dj-colors.iamtt.tech"
+            live: "https://dj-colors.iamtt.tech",
+            underConstruction: "no"
         },
         card2: {
             name: "MixMatch",
             skills: "html, css, js, bootstrap, jquery",
             thumbnail: "assets/images/mixmatch-thumbnail.png",
             github: "https://github.com/tomost2019/MixMatch",
-            live: "https://mixmatch.iamtt.tech"
+            live: "https://mixmatch.iamtt.tech",
+            underConstruction: "no"
         },
         card3: {
             name: "Portfolio IamTT",
             skills: "html, css, js, jquery",
             thumbnail: "assets/images/iamtt-thumbnail.png",
             github: "https://github.com/tomost2019/IamTT",
-            live: "https://iamtt.tech"
+            live: "https://iamtt.tech",
+            underConstruction: "no"
         },
+
     },
     skills: {
         skill1: {
@@ -169,6 +173,12 @@ const projects = {
 
         // Iterate through cards and append project cards.
         for(let value of cards) {
+
+            let construction = value.underConstruction.toLowerCase();
+
+            // Check if the project is under construction. If 'no' then append the cards as usal.
+            if (construction === 'no') {
+
             /* Add the attribute data-skills with the skills from each projects.
             It is used to compare skills in the projectShowSkills function. */
             $('.project-container').append(`
@@ -182,6 +192,22 @@ const projects = {
                 </div>
             </div>
             `)
+            }
+
+             // Check if the project is under construction. If 'yes' then append the cards with under construction image.
+            if (construction === 'yes') {
+                $('.project-container').append(`
+                <div class="card" data-skills="${value.skills}"> 
+                    <div class="card-thumbnail">
+                        <img src="${value.thumbnail}" alt="${value.name}">
+                    </div>
+                    <div class="card-link">
+                    <img src="../assets/images/under-construction.png" alt"Under Construction">
+                    </div>
+                </div>
+                `)
+            }
+
         };
 
         // Checks if the web browser is edge and add proper css.
