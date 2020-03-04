@@ -58,6 +58,7 @@ const navbar = {
       showHamburgerMenu: () => {
         $('.hamburger').on('click', function () {
         $('.hamburger-menu').css('display', 'grid');
+        $('html').css('overflow' , 'hidden');
         })
         let hamburgerMenu = Object.values(navbar.hamburgerMenu);
         // Iterate through hamburgerMenu and append the links.
@@ -73,13 +74,16 @@ const navbar = {
           $(document).on('keydown', function(e) {
             if (e.keyCode == 27) /* ESC Key */ {
                 $('.hamburger-menu').css('display', 'none');
+                $('html').css('overflow' , 'visible');
             }
           })
           $('.escape').on('click', function() {
             $('.hamburger-menu').css('display', 'none');
+            $('html').css('overflow' , 'visible');
           })
           $('.menu').on('click', function() {
             $('.hamburger-menu').css('display', 'none');
+            $('html').css('overflow' , 'visible');
           })
       }
     };
