@@ -103,7 +103,7 @@ const projects = {
         card1: {
             name: "Dj-Colors",
             skills: "html, css, js, bootstrap, jquery",
-            thumbnail: "assets/images/dj-color-thumbnail.png",
+            thumbnail: "../assets/images/dj-color-thumbnail.png",
             github: "https://github.com/tomost2019/dj-colors",
             live: "https://dj-colors.iamtt.tech",
             underConstruction: "no"
@@ -111,7 +111,7 @@ const projects = {
         card2: {
             name: "MixMatch",
             skills: "html, css, js, bootstrap, jquery",
-            thumbnail: "assets/images/mixmatch-thumbnail.png",
+            thumbnail: "../assets/images/mixmatch-thumbnail.png",
             github: "https://github.com/tomost2019/MixMatch",
             live: "https://mixmatch.iamtt.tech",
             underConstruction: "no"
@@ -119,7 +119,7 @@ const projects = {
         card3: {
             name: "Portfolio IamTT",
             skills: "html, css, js, jquery",
-            thumbnail: "assets/images/iamtt-thumbnail.png",
+            thumbnail: "../assets/images/iamtt-thumbnail.png",
             github: "https://github.com/tomost2019/IamTT",
             live: "https://iamtt.tech",
             underConstruction: "no"
