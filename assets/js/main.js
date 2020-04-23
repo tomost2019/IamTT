@@ -13,7 +13,7 @@ const navbar = {
         link2: {
             name: "Linkedin",
             imgSrc: "iamtt/../assets/images/linkedin.png",
-            link: "https://www.linkedin.com/in/tom-amnuay/"
+            link: "#"
         },
       },
       hamburgerMenu: {
