@@ -2,17 +2,17 @@
 const navbar = {
     logo: {
         text1: "Portfolio",
-        text2: "iamtt.tech",
+        text2: "iamtt",
     },
     socialLinks: {
         link1: {
             name: "Github",
-            imgSrc: "../assets/images/github.png",
+            imgSrc: "iamtt/../assets/images/github.png",
             link: "https://github.com/tomost2019/"
         },
         link2: {
             name: "Linkedin",
-            imgSrc: "../assets/images/linkedin.png",
+            imgSrc: "iamtt/../assets/images/linkedin.png",
             link: "https://www.linkedin.com/in/tom-amnuay/"
         },
       },
@@ -129,39 +129,39 @@ const projects = {
     skills: {
         skill1: {
             name: "html",
-            imgSrc: "../assets/images/skills/html-5.png"
+            imgSrc: "iamtt/../assets/images/skills/html-5.png"
         },
         skill2: {
             name: "css",
-            imgSrc: "../assets/images/skills/css3.png"
+            imgSrc: "iamtt/../assets/images/skills/css3.png"
         },
         skill3: {
             name: "js",
-            imgSrc: "../assets/images/skills/js.png"
+            imgSrc: "iamtt/../assets/images/skills/js.png"
         },
         skill4: {
             name: "python",
-            imgSrc: "../assets/images/skills/python.png"
+            imgSrc: "iamtt/../assets/images/skills/python.png"
         },
         skill5: { 
             name: "bootstrap",
-            imgSrc: "../assets/images/skills/bootstrap.png"
+            imgSrc: "iamtt/../assets/images/skills/bootstrap.png"
         },
         skill6: {
             name: "jquery",
-            imgSrc: "../assets/images/skills/jquery.png"
+            imgSrc: "iamtt/../assets/images/skills/jquery.png"
         },
         skill7: {
             name: "mongodb",
-            imgSrc: "../assets/images/skills/mongodb.png"
+            imgSrc: "iamtt/../assets/images/skills/mongodb.png"
         },
         skill8: {
             name: "django",
-            imgSrc: "../assets/images/skills/django.png"
+            imgSrc: "iamtt/../assets/images/skills/django.png"
         },
         skill9: {
             name: "flask",
-            imgSrc: "../assets/images/skills/flask.png"
+            imgSrc: "iamtt/../assets/images/skills/flask.png"
         },
     },
     showProjectCards: () => {
@@ -183,8 +183,8 @@ const projects = {
                     <img src="${value.thumbnail}" alt="${value.name}">
                 </div>
                 <div class="card-link">
-                <a href="${value.live}" target="_rel"><img src="../assets/images/live.png" alt"Live"></a>
-                <a href="${value.github}" target="_rel"><img src="../assets/images/github-live.png" alt="github"></a>
+                <a href="${value.live}" target="_rel"><img src="iamtt/../assets/images/live.png" alt"Live"></a>
+                <a href="${value.github}" target="_rel"><img src="iamtt/../assets/images/github-live.png" alt="github"></a>
                 </div>
             </div>
             `)
@@ -198,7 +198,7 @@ const projects = {
                         <img src="${value.thumbnail}" alt="${value.name}">
                     </div>
                     <div class="card-link">
-                    <img src="../assets/images/under-construction.png" alt"Under Construction">
+                    <img src="iamtt/../assets/images/under-construction.png" alt"Under Construction">
                     </div>
                 </div>
                 `)
