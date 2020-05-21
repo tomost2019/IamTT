@@ -2,18 +2,13 @@
 const navbar = {
     logo: {
         text1: "Portfolio",
-        text2: "iamtt",
+        text2: "iamtt.dev",
     },
     socialLinks: {
         link1: {
             name: "Github",
             imgSrc: "iamtt/../assets/images/github.png",
             link: "https://github.com/tomost2019/"
-        },
-        link2: {
-            name: "Linkedin",
-            imgSrc: "iamtt/../assets/images/linkedin.png",
-            link: "#"
         },
       },
       hamburgerMenu: {
