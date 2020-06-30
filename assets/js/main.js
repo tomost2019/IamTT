@@ -115,7 +115,7 @@ const projects = {
             name: "Portfolio IamTT",
             skills: "html, css, js, jquery",
             thumbnail: "iamtt/../assets/images/iamtt-thumbnail.png",
-            github: "https://github.com/tomost2019/IamTT",
+            github: "https://iamtt.dev",
             live: "https://tomost2019.github.io/iamtt/",
             underConstruction: "no"
         },
